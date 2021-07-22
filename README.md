@@ -20,7 +20,7 @@ Data source : https://knhanes.kdca.go.kr/knhanes/main.do.
 The data should be in CSV format and the dimensions should be (samples, columns).  
 Then write the types of your variables in variables.csv (numeric or binary)  [variable.csv](./data/variables.csv)  
 
-#### Run
+## Run
 
 ```sh
 python3 run_ML.py --label Cardio --data_path ./data/sample.csv --model SVM --VIF --Boruta --train
