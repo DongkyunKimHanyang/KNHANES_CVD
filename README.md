@@ -35,4 +35,6 @@ python3 run_ML.py --label Cardio --data_path ./data/sample.csv --model SVM --VIF
 
 Training and evaluation results are automatically created in the ./result directory.
 
-*The ray package only supports Linux. You will not be able to run this program on Windows.
+*The ray package only supports Linux. You will not be able to run this program on Windows.  
+
+Original source of BorutaSHAP used in this repository: https://github.com/Ekeany/Boruta-Shap
