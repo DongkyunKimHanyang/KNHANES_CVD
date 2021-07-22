@@ -37,4 +37,4 @@ Training and evaluation results are automatically created in the ./result direct
 
 *The ray package only supports Linux. You will not be able to run this program on Windows.  
 
-Original source of BorutaSHAP used in this repository: https://github.com/Ekeany/Boruta-Shap
+We modified BorutaSHAP of https://github.com/Ekeany/Boruta-Shap with parallel computation using ray package.
