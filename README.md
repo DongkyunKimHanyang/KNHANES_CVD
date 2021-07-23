@@ -13,7 +13,7 @@ Install python packages to run.
 More details about installing ray package -> https://docs.ray.io/en/master/installation.html.  
 
 ```sh
-pip3 install -r requirements.txt
+$pip3 install -r requirements.txt
 ```
 ## Prepare data
 Data source : https://knhanes.kdca.go.kr/knhanes/main.do.  
@@ -23,7 +23,11 @@ Then write the types of your variables in variables.csv (numeric or binary)  [va
 ## Run
 
 ```sh
-python3 run_ML.py --label Cardio --data_path ./data/sample.csv --model SVM --VIF --Boruta --train
+$ray start --head --port=6379
+To connect to this Ray runtime from another node, run
+    ray start --address='your address' --redis-password='your password'
+$ray start --address='your address' --redis-password='your password'
+$python3 run_ML.py --label Cardio --data_path ./data/sample.csv --model SVM --VIF --Boruta --train
 ```
 `--label`: Name of target column.  
 `--data_path`: Path of prepared CSV file.  
