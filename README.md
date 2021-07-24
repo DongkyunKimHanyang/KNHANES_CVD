@@ -32,9 +32,9 @@ $python3 run_ML.py --label Cardio --data_path ./data/sample.csv --model SVM --VI
 `--label`: Name of target column.  
 `--data_path`: Path of prepared CSV file.  
 `--model`: Choose a machine learning model among ['SVM','RandomForest','LightGBM','MLP'].  
-`--VIF`: Whether to excute VIF filtering.  
-`--Boruta`: Whether to excute BorutaSHAP filtering.  
-`--train`: Whether to train the model.If you have already trained the model, you can omit it.  
+`--VIF`: Boolean argument for VIF filtering.  
+`--Boruta`: Boolean argument for BorutaSHAP filtering.  
+`--train`: Whether to train the model. True: training & evaluation, False: only evaluation 
 
 
 Training and evaluation results are automatically created in the ./result directory.
